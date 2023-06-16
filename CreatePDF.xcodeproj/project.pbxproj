@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91C328462A3C947400D0C558 /* UILabel + Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C328452A3C947400D0C558 /* UILabel + Extentions.swift */; };
+		91C328482A3C950800D0C558 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C328472A3C950800D0C558 /* InfoView.swift */; };
+		91C3284A2A3C95AA00D0C558 /* InfoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C328492A3C95AA00D0C558 /* InfoTextField.swift */; };
+		91C3284C2A3C98EF00D0C558 /* InfoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C3284B2A3C98EF00D0C558 /* InfoImageView.swift */; };
 		91D7AEB22A3C8E1100149102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D7AEB12A3C8E1100149102 /* AppDelegate.swift */; };
 		91D7AEB42A3C8E1100149102 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D7AEB32A3C8E1100149102 /* SceneDelegate.swift */; };
 		91D7AEB62A3C8E1100149102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D7AEB52A3C8E1100149102 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		91C328452A3C947400D0C558 /* UILabel + Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extentions.swift"; sourceTree = "<group>"; };
+		91C328472A3C950800D0C558 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		91C328492A3C95AA00D0C558 /* InfoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTextField.swift; sourceTree = "<group>"; };
+		91C3284B2A3C98EF00D0C558 /* InfoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoImageView.swift; sourceTree = "<group>"; };
 		91D7AEAE2A3C8E1100149102 /* CreatePDF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreatePDF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D7AEB12A3C8E1100149102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91D7AEB32A3C8E1100149102 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91C328432A3C93D900D0C558 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				91C328442A3C944D00D0C558 /* UIKit */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		91C328442A3C944D00D0C558 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				91C328452A3C947400D0C558 /* UILabel + Extentions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		91D7AEA52A3C8E1100149102 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +83,7 @@
 				91D7AEC52A3C901800149102 /* Application */,
 				91D7AEC62A3C904D00149102 /* Views */,
 				91D7AEC72A3C905B00149102 /* Controllers */,
+				91C328432A3C93D900D0C558 /* Extentions */,
 				91D7AEC82A3C907900149102 /* SupportingFiles */,
 			);
 			path = CreatePDF;
@@ -77,6 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				91D7AEC92A3C915E00149102 /* MainView.swift */,
+				91C328472A3C950800D0C558 /* InfoView.swift */,
+				91C328492A3C95AA00D0C558 /* InfoTextField.swift */,
+				91C3284B2A3C98EF00D0C558 /* InfoImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,9 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91C3284C2A3C98EF00D0C558 /* InfoImageView.swift in Sources */,
 				91D7AEB62A3C8E1100149102 /* ViewController.swift in Sources */,
 				91D7AECA2A3C915E00149102 /* MainView.swift in Sources */,
+				91C328462A3C947400D0C558 /* UILabel + Extentions.swift in Sources */,
+				91C3284A2A3C95AA00D0C558 /* InfoTextField.swift in Sources */,
 				91D7AEB22A3C8E1100149102 /* AppDelegate.swift in Sources */,
+				91C328482A3C950800D0C558 /* InfoView.swift in Sources */,
 				91D7AEB42A3C8E1100149102 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

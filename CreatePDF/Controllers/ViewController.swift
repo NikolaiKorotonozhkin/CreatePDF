@@ -20,8 +20,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "IOS Junior CV"
     }
-
+    
+    @objc func shareButtonTapped() {
+        print("shareButtonTapped")
+    }
+    
+    @objc func previewButtonTapped() {
+        print("previewButtonTapped")
+    }
 
 }
 
