@@ -9,9 +9,9 @@ import UIKit
 
 final class MainView: UIView {
     
-    private let nameView = InfoView("Name")
-    private let emailView = InfoView("E-mail")
-    private let phoneView = InfoView("Phone")
+    private let nameView = InfoView("Name", type: .name)
+    private let emailView = InfoView("E-mail", type: .email)
+    private let phoneView = InfoView("Phone", type: .phone)
     private let photoImageView = InfoImageView(frame: .zero)
     private var experienceSegmentedControl = UISegmentedControl()
     private let previewButton = UIButton(type: .system)
@@ -33,6 +33,32 @@ final class MainView: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    convenience init(delegate: InfoProtocol?) {
+        self.init()
+        photoImageView.delegate = delegate
+    }
+    
+    func setImage(_ image: UIImage) {
+        photoImageView.image = image
+        photoImageView.contentMode = .scaleAspectFill
+    }
+    
+    func getInfoText(_ viewType: ViewType) -> String {
+        switch viewType {
+        case .name: return nameView.getText()
+        case .email: return emailView.getText()
+        case .phone: return phoneView.getText()
+        }
+    }
+    
+    func setIsFailed(_ viewType: ViewType, _ isFailed: Bool) {
+        switch viewType {
+        case .name: nameView.isFailed = isFailed
+        case .email: emailView.isFailed = isFailed
+        case .phone: phoneView.isFailed = isFailed
+        }
     }
     
 }
