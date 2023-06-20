@@ -53,6 +53,15 @@ final class MainView: UIView {
         }
     }
     
+    func getSegmentedIndex() -> Int {
+        experienceSegmentedControl.selectedSegmentIndex
+    }
+    
+    func getImage() -> UIImage {
+        guard let defualtImage = UIImage(named: "orange") else {return UIImage() }
+        return photoImageView.image ?? defualtImage
+    }
+    
     func setIsFailed(_ viewType: ViewType, _ isFailed: Bool) {
         switch viewType {
         case .name: nameView.isFailed = isFailed
