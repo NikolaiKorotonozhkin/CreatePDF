@@ -58,8 +58,14 @@ final class MainView: UIView {
     }
     
     func getImage() -> UIImage {
-        guard let defualtImage = UIImage(named: "orange") else {return UIImage() }
-        return photoImageView.image ?? defualtImage
+        guard let defualtImage = UIImage(named: "avatar"),
+              let image = photoImageView.image else { return UIImage() }
+        
+        if image == UIImage(systemName: "person.badge.plus") {
+            return defualtImage
+        }
+        
+        return image
     }
     
     func setIsFailed(_ viewType: ViewType, _ isFailed: Bool) {

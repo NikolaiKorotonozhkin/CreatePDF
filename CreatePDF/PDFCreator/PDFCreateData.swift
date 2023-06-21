@@ -28,6 +28,7 @@ extension PDFCreator {
         
         let data = renderer.pdfData { context in
             context.beginPage()
+            pdfCreateCV(context: context.cgContext)
         }
         
         return data
