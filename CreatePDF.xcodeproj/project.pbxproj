@@ -29,6 +29,8 @@
 		91D7AEBB2A3C8E1300149102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91D7AEBA2A3C8E1300149102 /* Assets.xcassets */; };
 		91D7AEBE2A3C8E1300149102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91D7AEBC2A3C8E1300149102 /* LaunchScreen.storyboard */; };
 		91D7AECA2A3C915E00149102 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D7AEC92A3C915E00149102 /* MainView.swift */; };
+		91EE0BCA2A48872000782667 /* PDFCreateInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EE0BC92A48872000782667 /* PDFCreateInfo.swift */; };
+		91EE0BCD2A48890C00782667 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EE0BCC2A48890C00782667 /* Resources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		91D7AEBD2A3C8E1300149102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91D7AEBF2A3C8E1300149102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91D7AEC92A3C915E00149102 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		91EE0BC92A48872000782667 /* PDFCreateInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFCreateInfo.swift; sourceTree = "<group>"; };
+		91EE0BCC2A48890C00782667 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 				918CFD602A4317CF005DCDB1 /* PDFCreateTitle.swift */,
 				918CFD642A431AD5005DCDB1 /* PDFCreatePersonalInfo.swift */,
 				918CFD5E2A431667005DCDB1 /* PDFCreateCV.swift */,
+				91EE0BC92A48872000782667 /* PDFCreateInfo.swift */,
 			);
 			path = PDFCreator;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 				9175B2902A42096D0090BC33 /* PDFCreator */,
 				91D7AEC62A3C904D00149102 /* Views */,
 				91D7AEC72A3C905B00149102 /* Controllers */,
+				91EE0BCB2A4888EA00782667 /* Resources */,
 				91C328432A3C93D900D0C558 /* Extentions */,
 				91D7AEC82A3C907900149102 /* SupportingFiles */,
 			);
@@ -177,6 +183,14 @@
 				91D7AEBF2A3C8E1300149102 /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		91EE0BCB2A4888EA00782667 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91EE0BCC2A48890C00782667 /* Resources.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +266,7 @@
 				918CFD592A431040005DCDB1 /* PDFAddImage.swift in Sources */,
 				91C328502A3DF11C00D0C558 /* UIView + Extensions.swift in Sources */,
 				918CFD5B2A431196005DCDB1 /* PDFAddText.swift in Sources */,
+				91EE0BCA2A48872000782667 /* PDFCreateInfo.swift in Sources */,
 				9175B28F2A4208060090BC33 /* PDFPreviewViewController.swift in Sources */,
 				918CFD652A431AD5005DCDB1 /* PDFCreatePersonalInfo.swift in Sources */,
 				91C3284C2A3C98EF00D0C558 /* InfoImageView.swift in Sources */,
@@ -267,6 +282,7 @@
 				91D7AEB22A3C8E1100149102 /* AppDelegate.swift in Sources */,
 				9175B2942A420C4D0090BC33 /* PDFCreateData.swift in Sources */,
 				918CFD632A43199D005DCDB1 /* PDFAddPhotoText.swift in Sources */,
+				91EE0BCD2A48890C00782667 /* Resources.swift in Sources */,
 				91C328482A3C950800D0C558 /* InfoView.swift in Sources */,
 				91D7AEB42A3C8E1100149102 /* SceneDelegate.swift in Sources */,
 			);

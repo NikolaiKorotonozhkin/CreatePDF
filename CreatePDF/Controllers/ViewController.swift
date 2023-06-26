@@ -24,22 +24,35 @@ class ViewController: UIViewController {
     }
     
     @objc func shareButtonTapped() {
-        print("shareButtonTapped")
+        if checkInfoField() {
+            guard let mainView else { return }
+            let pdfCreator = PDFCreator(name: mainView.getInfoText(.name),
+                                        email: mainView.getInfoText(.email),
+                                        phone: mainView.getInfoText(.phone),
+                                        experience: mainView.getSegmentedIndex(),
+                                        image: mainView.getImage())
+            
+            let pdfData = pdfCreator.pdfCreateData()
+            let activityViewController = UIActivityViewController(activityItems: [pdfData],
+                                                                  applicationActivities: [])
+            present(activityViewController, animated: true)
+        }
     }
     
     @objc func previewButtonTapped() {
-//        checkInfoField()
-        guard let mainView else { return }
-        let pdfCreator = PDFCreator(name: mainView.getInfoText(.name),
-                                    email: mainView.getInfoText(.email),
-                                    phone: mainView.getInfoText(.phone),
-                                    experience: mainView.getSegmentedIndex(),
-                                    image: mainView.getImage())
-        
-        let pdfPreviewViewController = PDFPreviewViewController()
-        pdfPreviewViewController.documentData = pdfCreator.pdfCreateData()
-        
-        navigationController?.pushViewController(pdfPreviewViewController, animated: true)
+        if checkInfoField() {
+            guard let mainView else { return }
+            let pdfCreator = PDFCreator(name: mainView.getInfoText(.name),
+                                        email: mainView.getInfoText(.email),
+                                        phone: mainView.getInfoText(.phone),
+                                        experience: mainView.getSegmentedIndex(),
+                                        image: mainView.getImage())
+            
+            let pdfPreviewViewController = PDFPreviewViewController()
+            pdfPreviewViewController.documentData = pdfCreator.pdfCreateData()
+            
+            navigationController?.pushViewController(pdfPreviewViewController, animated: true)
+        }
     }
     
     private func checkInfoField() -> Bool {
