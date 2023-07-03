@@ -5,3 +5,5 @@
 Анимация и проверка на заполение всех полей
 
 ![Image alt](https://github.com/NikolaiKorotonozhkin/CreatePDF/blob/main/GIF1.gif)
+
+![Image alt](https://github.com/NikolaiKorotonozhkin/CreatePDF/blob/main/GIF1-1.gif)
